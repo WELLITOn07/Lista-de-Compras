@@ -27,45 +27,52 @@
         </header>
         <main>
             <div id="lista">
-                <table> 
-                    <thead>
-                        <tr>
-                            <th>Item</th>
-                            <th>Valor</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                       <tr>
-                           <th>n/d</th>
-                           <td>0.0</td>
-                       </tr>
-                       <tr>
-                        <th>n/d</th>
-                        <td>0.0</td>
-                    </tr>
-                    <tr>
-                        <th>n/d</th>
-                        <td>0.0</td>
-                    </tr>
-                    <tr>
-                        <th>n/d</th>
-                        <td>0.0</td>
-                    </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th class="border">Total de Itens</th>
-                            <td class="border">0.0</td>
-                        </tr>
-                        <tr>
-                            <th class="border">Valor Total</th>
-                            <td class="border">0.0</td>
-                        </tr>
-                        <tr>
-                            <th id="salvar"><a href="#" id="salvar2">SALVAR</a></th>
-                        </tr>
-                    </tfoot> 
-                </table>
+                <form action="">
+
+                    <table> 
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Quantidade</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <input type="text" name="productName" id="productName" class="product" placeholder="Descrição Produto">
+                                </th>
+                                <td><input type="number" name="productQuantity" id="productQuantity" class="product" placeholder="Quantidade"></td>
+                                <td><input type="text" name="productValue" id="productValue" class="product" placeholder="Custo"></td>
+                            </tr>
+                            <tr>
+                                <th>n/d</th>
+                                <td>0.0</td>
+                            </tr>
+                            <tr>
+                                <th>n/d</th>
+                                <td>0.0</td>
+                            </tr>
+                            <tr>
+                                <th>n/d</th>
+                                <td>0.0</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th class="border">Total de Itens</th>
+                                <td class="border">0.0</td>
+                            </tr>
+                            <tr>
+                                <th class="border">Valor Total</th>
+                                <td class="border">0.0</td>
+                            </tr>
+                            <tr>
+                                <th id="salvar"><button type="submit" name="salvar" id="salvar2">SALVAR</button></th>
+                            </tr>
+                        </tfoot> 
+                    </table>
+                </form>
             </div>    
         </main>
     </body>

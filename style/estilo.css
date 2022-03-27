@@ -22,7 +22,7 @@ a {
     color: #DB5A42;
 }
 body {
-    max-width: 500px;
+    max-width: 640px;
     margin: auto;
     padding: 10px;
 }
@@ -98,7 +98,12 @@ table tfoot tr > th#salvar {
     padding: 10px;
     background-color: #2D2D2A;
 }
-table tfoot tr th > a#salvar2 {
+table tfoot tr th > #salvar2 {
     font-family: 'vipnagorgialla',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: lightgreen;
+}
+
+#salvar2{
+    background-color: transparent;
+    border-color: transparent;
 }
