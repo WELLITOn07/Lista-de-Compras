@@ -19,7 +19,7 @@
 }
 a {
     text-decoration: none;
-    color: #DB5A42;
+    color: #C1C1C1;
 }
 body {
     max-width: 500px;
@@ -30,12 +30,13 @@ header {
     font-family: 'vipnagorgialla',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     padding: 10px;
-    background-color: #C1C1C1;
+    background-color: #000E14;
+    color: aliceblue;
 }
 header nav ul {
     display: flex;
     margin: 5px;
-    background-color: #2D2D2A;
+    background-color: #003047;
     border-radius: 5px;
 }
 header nav ul > li {
@@ -51,7 +52,7 @@ div {
     padding: 10px;
 }
 main {
-    background-color: #C1C1C1;
+    background-color: #000E14;
 }
 table {
     width: 480px;
@@ -61,7 +62,7 @@ table {
     background-color: white;
 }
 table thead {
-    background-color: #2D2D2A;
+    background-color: #001824;
 }
 table thead tr > th {
     padding: 5px;
@@ -81,8 +82,8 @@ table tbody tr > td {
 }
 table tfoot tr > th#resultado {
     padding: 5px;
-    color: lightskyblue;
-    background-color: #2D2D2A;
+    color: #C1C1C1;
+    background-color: #001824;
     font-family: 'Roboto-Bold',Arial, Helvetica, sans-serif;
 }
 table tfoot tr > th.gasto {
@@ -96,4 +97,7 @@ table tfoot tr > td {
     border: 1px solid #2D2D2A;
     text-align: center;
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #003d5c1f;;
 }
