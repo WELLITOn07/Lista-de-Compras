@@ -19,7 +19,7 @@
 }
 a {
     text-decoration: none;
-    color: #DB5A42;
+    color: #C1C1C1;
 }
 body {
     max-width: 500px;
@@ -30,12 +30,13 @@ header {
     font-family: 'vipnagorgialla',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     padding: 10px;
-    background-color: #C1C1C1;
+    background-color: #000E14;
+    color: aliceblue;
 }
 header nav ul {
     display: flex;
     margin: 5px;
-    background-color: #2D2D2A;
+    background-color: #003047;
     border-radius: 5px;
 }
 header nav ul > li {
@@ -48,7 +49,7 @@ div {
     padding: 10px;
 }
 main {
-    background-color: #C1C1C1;
+    background-color: #000E14;
 }
 table {
     width: 480px;
@@ -58,7 +59,7 @@ table {
     background-color: white;
 }
 table thead {
-    background-color: #2D2D2A;
+    background-color: #001824;
 }
 table thead tr > th {
     padding: 5px;
@@ -90,7 +91,7 @@ table tfoot tr > td.border {
 }
 table tfoot tr > th#excluir {
     padding: 10px;
-    background-color: #2D2D2A;
+    background-color: #001824;
 }
 table tfoot tr th > a#excluir2 {
     font-family: 'vipnagorgialla',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -98,9 +99,12 @@ table tfoot tr th > a#excluir2 {
 }
 table tfoot tr > th#selecionar {
     padding: 10px;
-    background-color: #2D2D2A;
+    background-color: #001824;
 }
 table tfoot tr th > a#selecionar2 {
     font-family: 'vipnagorgialla',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: lightskyblue;
+    color: #C1C1C1;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #003d5c1f;;
 }
