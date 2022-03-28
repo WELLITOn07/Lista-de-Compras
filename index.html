@@ -4,8 +4,7 @@
 <html lang="PT-BR">
     <head>
         <meta charset="UTF-8">
-        <meta name="ViewPort"
-        content="width=device-width", initial-scale="1.0">
+        <meta name="ViewPort" content="width=device-width", initial-scale="1.0">
         <link rel="stylesheet" href="style/estilo.css">
         <link rel="shortcut icon" href="imagens/logo-icon.png" type="image/x-icon">
         <title>Lista de Compras</title>
@@ -27,7 +26,7 @@
         </header>
         <main>
             <div id="lista">
-                <form action="">
+                <form name="formProduct" id="formProduct" class="formProduct" action="">
 
                     <table> 
                         <thead>
@@ -35,27 +34,15 @@
                                 <th>Item</th>
                                 <th>Quantidade</th>
                                 <th>Valor</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th>
-                                    <input type="text" name="productName" id="productName" class="product" placeholder="Descrição Produto">
-                                </th>
-                                <td><input type="number" name="productQuantity" id="productQuantity" class="product" placeholder="Quantidade"></td>
-                                <td><input type="text" name="productValue" id="productValue" class="product" placeholder="Custo"></td>
-                            </tr>
-                            <tr>
-                                <th>n/d</th>
-                                <td>0.0</td>
-                            </tr>
-                            <tr>
-                                <th>n/d</th>
-                                <td>0.0</td>
-                            </tr>
-                            <tr>
-                                <th>n/d</th>
-                                <td>0.0</td>
+                                <th><input type="text" name="productDescription" id="productDescription" class="inputProduct" placeholder="Descrição Produto"></th>
+                                <td><input type="number" name="productQuantity" id="productQuantity" class="inputProduct" placeholder="Quantidade"></td>
+                                <td><input type="text" name="productPrice" id="productPrice" class="inputProduct" placeholder="Custo"></td>
+                                <td><a href="#" name="addProduct" id="addProduct" class="addProduct" title="Novo Produto">+</a></td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -65,10 +52,10 @@
                             </tr>
                             <tr>
                                 <th class="border">Valor Total</th>
-                                <td class="border">0.0</td>
+                                <td class="border"><p id="productTotalPrice"></p></td>
                             </tr>
                             <tr>
-                                <th id="salvar"><button type="submit" name="salvar" id="salvar2">SALVAR</button></th>
+                                <th id="salvar"><button name="save" id="salvar2" class="btn-primary" onclick="submit()" >SALVAR</button></th>
                             </tr>
                         </tfoot> 
                     </table>
@@ -77,3 +64,4 @@
         </main>
     </body>
 </html>
+<script src="./js/form.js"></script>
